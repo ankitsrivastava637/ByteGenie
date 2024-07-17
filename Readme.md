@@ -127,13 +127,12 @@ The architecture contains several key steps and optimizations that made the proc
 ## Architecture DIAGRAMS :
 
 The following diagrams illustrates the overall architecture of the AI chatbot, including both backend and frontend components, as well as the Retrieval-Augmented Generation (RAG) architecture:
-
-
-### Overall Architecture : 
+ 
+### RAG architecture :
 
 ![diagram (2)](https://github.com/user-attachments/assets/f8b22c7f-9860-4d60-b196-2d675d5958d9)
 
-### RAG architecture : 
+ ### Overall Architecture :
 
 ![diagram (1)](https://github.com/user-attachments/assets/7b14bece-3795-476e-b065-98818f0c0b08)
 
