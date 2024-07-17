@@ -137,6 +137,11 @@ The following diagrams illustrates the overall architecture of the AI chatbot, i
 ![diagram (1)](https://github.com/user-attachments/assets/7b14bece-3795-476e-b065-98818f0c0b08)
 
 
+### Probable Future Scope - Architecture Flow 
+
+![diagram (3)](https://github.com/user-attachments/assets/7aef1ff2-2997-4a36-9286-36a7a5b80150)
+
+
 - **Backend**:
   - **FastAPI Server**: Handles API requests.
   - **SQLite Database**: Stores the data.
