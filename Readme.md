@@ -106,8 +106,14 @@ The architecture contains several key steps and optimizations that made the proc
 4. **Customizing Prompts**: Improved the customization of prompts to better handle various types of queries.
 5. **Adding Memory to the Chatbot**: Integrated a memory module to enable the chatbot to handle follow-up questions related to the database context.
 
-These steps enhanced the overall performance and accuracy of the AI-powered SQL query generation, making the chatbot more effective and efficient. It also takes care that if there are high number of tables then prompt is optimized select only relevant table and schema for question answering. This thereby improves speed and reduces cost of calling LLM.
 
+## Benefits of this arhcitecture :
+
+1. These steps enhanced the overall performance and accuracy of the AI-powered SQL query generation, making the chatbot more effective and efficient. 
+2. It also takes care that if there are high number of tables in the database. 
+3. The prompt is optimized select only relevant table and schema for question answering. This thereby improves speed and reduces cost of calling LLM.
+4. The project also includes query analyzer, which would eventually help in future to segment the different type of user query to be routed to existing RAG process or a new GraphRAG process(discussed later in this page) for handling all factual, statistical and complex relational graph based question in much better way.
+   
 ## Future improvements to the chatbot :
 
 1. Implement fine-tuning of the model to improve the accuracy of the query generation, once more data is available.
