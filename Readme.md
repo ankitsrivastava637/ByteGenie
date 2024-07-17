@@ -7,7 +7,6 @@ ByteGenie is an AI-powered chatbot application that converts natural language qu
 - [Setting Up the Database](#setting-up-the-database)
 - [Loading Data into the Database](#loading-data-into-the-database)
 - [Running the Application](#running-the-application)
-- [Notes from the Notebook](#notes-from-the-notebook)
 - [Architecture](#architecture)
 
 ## Installation
