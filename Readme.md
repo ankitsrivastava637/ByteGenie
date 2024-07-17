@@ -124,44 +124,19 @@ The architecture contains several key steps and optimizations that made the proc
 7. Incorporate vector database storage to improve the performance of the chatbot and make it more private.
 8. Incorprate GraphRag introduced recently by microsoft to handle more complex relationship graphs based queries. GraphRag is a graph-based model that can handle queries that involve multiple tables and multiple relationships between them. More on it can be found on this https://microsoft.github.io/graphrag/
 
-## Architecture
+## Architecture DIAGRAMS :
 
-The following diagram illustrates the overall architecture of the AI chatbot, including both backend and frontend components, as well as the Retrieval-Augmented Generation (RAG) architecture:
+The following diagrams illustrates the overall architecture of the AI chatbot, including both backend and frontend components, as well as the Retrieval-Augmented Generation (RAG) architecture:
 
-```python 
-{
-Backend \
-    A[FastAPI Server] \
-    B[SQLite Database] \
-    C[SQLAlchemy ORM] \
-    D[LangChain] \
-    E[OpenAI API] \
-    F[Data Preprocessing Scripts] \
-    G[RAG Retriever] \
-    H[Query Analyzer] \
-    I[Memory Module] \
-    A --> C \
-    C --> B \
-    A --> D \
-    D --> E \
-    F --> B \
-    A --> G
-    G --> B
-    A --> H
-    H --> D
-    H --> G
-    D --> I
-    I --> D
-  end
-  Frontend
-    J[React Application]
-    K[Axios API Calls]
-    J --> K
-    K --> A
-  end
-  J --> A
-}
-```
+
+### Overall Architecture : 
+
+![diagram (2)](https://github.com/user-attachments/assets/f8b22c7f-9860-4d60-b196-2d675d5958d9)
+
+### RAG architecture : 
+
+![diagram (1)](https://github.com/user-attachments/assets/7b14bece-3795-476e-b065-98818f0c0b08)
+
 
 - **Backend**:
   - **FastAPI Server**: Handles API requests.
