@@ -14,28 +14,28 @@ ByteGenie is an AI-powered chatbot application that converts natural language qu
 
 ### Clone the Repository
 
-\```sh
+```sh
 git clone https://github.com/ankitsrivastava637/ByteGenie.git
 cd ByteGenie
-\```
+```
 
 ### Backend Dependencies
 
 Navigate to the `backend` directory and install the required Python packages:
 
-\```sh
+```sh
 cd backend
 pip install -r requirements.txt
-\```
+```
 
 ### Frontend Dependencies
 
 Navigate to the `frontend` directory and install the npm packages:
 
-\```sh
+```sh
 cd ../frontend
 npm install
-\```
+```
 
 ## Setting Up the Database
 
@@ -43,37 +43,37 @@ npm install
 
 Create a `.env` file in the `backend` directory (if not already present) and configure your database connection details. You can use the provided `.env.sample` as a template:
 
-\```sh
+```sh
 cd ../backend
 cp .env.sample .env
 \```
 
 Edit the `.env` file to include your specific database configuration:
 
-\```plaintext
+```plaintext
 DB_SERVER=sqlite:///./test.db
 DB_DATABASE=
 DB_USERNAME=
 DB_PASSWORD=
 DB_PORT=
 OPENAI_KEY=your_openai_api_key
-\```
+```
 
 ### Create Database Schema
 
 Create the database schema using the `create_schema.py` script:
 
-\```sh
+```sh
 python scripts/create_schema.py
-\```
+```
 
 ## Loading Data into the Database
 
 Run the data loading and preprocessing script to populate your database:
 
-\```sh
+```sh
 python scripts/load_data_from_csv.py
-\```
+```
 
 ## Running the Application
 
@@ -81,9 +81,9 @@ python scripts/load_data_from_csv.py
 
 Start the FastAPI server:
 
-\```sh
+```sh
 uvicorn app:app --reload
-\```
+```
 
 ### Start the Frontend Application
 
@@ -123,23 +123,23 @@ These steps enhanced the overall performance and accuracy of the AI-powered SQL 
 
 The following diagram illustrates the overall architecture of the AI chatbot, including both backend and frontend components, as well as the Retrieval-Augmented Generation (RAG) architecture:
 
-\```mermaid
+```mermaid
 graph LR
-  subgraph Backend
-    A[FastAPI Server]
-    B[SQLite Database]
-    C[SQLAlchemy ORM]
-    D[LangChain]
-    E[OpenAI API]
-    F[Data Preprocessing Scripts]
-    G[RAG Retriever]
-    H[Query Analyzer]
-    I[Memory Module]
-    A --> C
-    C --> B
-    A --> D
-    D --> E
-    F --> B
+  subgraph Backend \
+    A[FastAPI Server] \
+    B[SQLite Database] \
+    C[SQLAlchemy ORM] \
+    D[LangChain] \
+    E[OpenAI API] \
+    F[Data Preprocessing Scripts] \
+    G[RAG Retriever] \
+    H[Query Analyzer] \
+    I[Memory Module] \
+    A --> C \
+    C --> B \
+    A --> D \
+    D --> E \
+    F --> B \
     A --> G
     G --> B
     A --> H
@@ -155,7 +155,7 @@ graph LR
     K --> A
   end
   J --> A
-\```
+```
 
 - **Backend**:
   - **FastAPI Server**: Handles API requests.
