@@ -1,0 +1,4 @@
+*.log
+frontend/node_modules
+.next
+out
