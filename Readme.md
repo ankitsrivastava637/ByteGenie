@@ -123,9 +123,9 @@ These steps enhanced the overall performance and accuracy of the AI-powered SQL 
 
 The following diagram illustrates the overall architecture of the AI chatbot, including both backend and frontend components, as well as the Retrieval-Augmented Generation (RAG) architecture:
 
-```mermaid
-graph LR
-  subgraph Backend \
+```python 
+{
+Backend \
     A[FastAPI Server] \
     B[SQLite Database] \
     C[SQLAlchemy ORM] \
@@ -148,13 +148,14 @@ graph LR
     D --> I
     I --> D
   end
-  subgraph Frontend
+  Frontend
     J[React Application]
     K[Axios API Calls]
     J --> K
     K --> A
   end
   J --> A
+}
 ```
 
 - **Backend**:
